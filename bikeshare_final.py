@@ -171,9 +171,7 @@ def user_stats(df):
     if birth_year_in_dataframe is False:
         print("Birth years are not specified")
     else:
-        print(int(df['Birth Year'].min()),'is the earliest birth year')
-        print(int(df['Birth Year'].max()),'is the most recent brith year')
-        print(int(df['Birth Year'].value_counts().idxmax()),'is the most commen birth year')
+        print(int(df['Birth Year'].min()),'is the earliest birth year\n',int(df['Birth Year'].max()),'is the most recent brith year\n',int(df['Birth Year'].value_counts().idxmax()),'is the most commen birth year')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
