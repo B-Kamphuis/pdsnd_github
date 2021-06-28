@@ -7,7 +7,7 @@
 Replace the Project Title
 
 ### Description
-Describe what your project is about and what it does
+This is an python project where a user can get information about the bikeshare project 
 
 ### Files used
 bikeshare_final.py
