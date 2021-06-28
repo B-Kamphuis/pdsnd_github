@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-# er zit een fout in df dag benadering
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -15,7 +15,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington).
     while True:
         city = input("Please type your prefered city; chicago, new york city or washington\n").strip().lower()
         if city not in ['chicago','new york city','washington']:
@@ -23,8 +23,6 @@ def get_filters():
             continue
         else:
             break
-
-
     # get user input for month (all, january, february, ... , june)
     while True:
         month = input("Please type your prefered month; jan, feb, mar, apr, may, jun or all\n").strip().lower()
@@ -33,7 +31,6 @@ def get_filters():
             continue
         else:
             break
-
     # get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
         day = input("Please type your prefered day of the week; mon, tue, wed, thu, fri, sat, sun or all\n").strip().lower()
@@ -66,7 +63,6 @@ def load_data(city, month, day):
     # extract month and day of week from Start Time to create new columns
     df['month'] = df['Start Time'].dt.month
     df['day'] = df['Start Time'].dt.dayofweek
-
 
     # filter by month if applicable
     if month != 'all':
