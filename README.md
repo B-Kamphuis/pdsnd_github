@@ -4,10 +4,10 @@
 28-06-2021
 
 ### Project Title
-Replace the Project Title
+pdsnd_github
 
 ### Description
-This is an python project where a user can get information about the bikeshare project 
+This is an python project where a user can get information about the bikeshare project
 
 ### Files used
 bikeshare_final.py
